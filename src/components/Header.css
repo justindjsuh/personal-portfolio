@@ -1,0 +1,157 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 4rem;
+}
+
+.left-nav img {
+  width: 50%;
+  height: 50%;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.toggle {
+  all: unset;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle label {
+  margin: 0;
+  background-color: #777;
+  border: 2px solid #555;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 100px;
+  height: 50px;
+}
+
+.toggle label::after {
+  background-color: #555;
+  border-radius: 50%;
+  content: " ";
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 4px;
+  transition: all ease-in-out 0.3s;
+  width: 42px;
+  height: 42px;
+}
+
+.toggle input[type="checkbox"]:checked ~ label {
+  background-color: #f15025;
+  border-color: #f13c0a;
+}
+
+.toggle input[type="checkbox"]:checked ~ label::after {
+  background-color: #af310e;
+  transform: translateX(50px);
+}
+
+.burger-icon {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 9999;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: black;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.burger1.isOpen {
+  transform: rotate(45deg);
+}
+.burger2.isOpen {
+  opacity: 0;
+}
+.burger3.isOpen {
+  transform: rotate(-45deg);
+}
+
+.menu-container {
+  top: 0;
+  right: 0;
+  background-color: #f3f4f8;
+  position: absolute;
+  width: 50%;
+  height: 100svh;
+  z-index: 999;
+  animation-name: fadeIn;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-container li {
+  list-style-type: none;
+  font-size: 96px;
+}
+
+.nav-option {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-option p {
+  margin: 0;
+}
+
+.nav-option p:first-child {
+  font-size: 26px;
+  transform: translateY(20px);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(1000px);
+    opacitx: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.screen-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100svh;
+  background-color: rgba(243, 244, 248, 0.4);
+}
+
+.burger-icon.in-menu {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
