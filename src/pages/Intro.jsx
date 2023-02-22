@@ -1,12 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import "./Intro.css";
 
 function Intro() {
   // const navigate = useNavigate
+  const navigate = useNavigate();
   const handleStart = () => {
     const page = document.querySelector(".App");
     page.classList.add("animate_content");
-    setTimeout(() => {});
-    console.log("HELO");
+    setTimeout(() => {
+      navigate("/home");
+    }, 1000);
   };
   return (
     <div className="App">
@@ -19,9 +22,8 @@ function Intro() {
             </div>
             <p className="heading">Choose a theme</p>
             <p>
-              Before I show you around, do you prefer light or
-              <br />
-              dark mode? &#40;there&apos;s a right answer&#41;
+              Before I show you around, do you prefer light or dark mode?
+              &#40;there&apos;s a right answer&#41;
             </p>
             <label htmlFor="switch">
               <div className="toggle"></div>
