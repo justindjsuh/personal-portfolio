@@ -13,19 +13,11 @@ const Header = () => {
 
   const toggleDarkThemeLanding = () => {
     let attributeVal = document.documentElement.getAttribute("data-theme");
-    console.log("ATTRIBUTE VAL", attributeVal);
     if (attributeVal === "dark") {
       document.documentElement.setAttribute("data-theme", "light");
     } else {
       document.documentElement.setAttribute("data-theme", "dark");
     }
-
-    // const container = document.querySelector(".container");
-    // container.classList.toggle("dark-theme");
-    // const burger = document.querySelectorAll(".burger");
-    // burger.forEach((el) => el.classList.toggle("dark-theme-burger"));
-    // const menuContainer = document.querySelector(".menu-container");
-    // menuContainer.classList.toggle("dark-theme-menu");
   };
 
   return (
