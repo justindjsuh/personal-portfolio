@@ -2,12 +2,31 @@
   font-family: "DM Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #191919;
-  background-color: #f3f4f8;
+  --text-primary: #191919;
+  --bg-primary: #f3f4f8;
+  --terminal-offwhite: #efefef;
+  --terminal-border: #dcdcdc;
+  --terminal-text: #4f4e4e;
+  --terminal-bg-text: rgba(79, 78, 78, 0.5);
+  --text-accent: #f15025;
+  --screen-cover: rgba(243, 244, 248, 0.4);
+  --button-hover: #e7e7e7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+[data-theme="dark"] {
+  --text-primary: #f3f4f8;
+  --bg-primary: #26242e;
+  --terminal-offwhite: #1f1d29;
+  --terminal-border: #23212e;
+  --terminal-text: #b7b4b4;
+  --text-accent: #92aef9;
+  --terminal-bg-text: rgba(255, 255, 255, 0.5);
+  --screen-cover: rgba(38, 36, 46, 0.5);
+  --button-hover: #1f1d29;
 }

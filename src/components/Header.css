@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 2rem 4rem 0 4rem;
 }
 
 .left-nav img {
@@ -35,8 +35,8 @@ nav {
   display: inline-block;
   position: relative;
   transition: all ease-in-out 0.3s;
-  width: 100px;
-  height: 50px;
+  width: 70px;
+  height: 30px;
 }
 
 .toggle-main label::after {
@@ -49,8 +49,8 @@ nav {
   left: 3px;
   top: 4px;
   transition: all ease-in-out 0.3s;
-  width: 42px;
-  height: 42px;
+  width: 22px;
+  height: 22px;
 }
 
 .toggle-main input[type="checkbox"]:checked ~ label {
@@ -61,7 +61,7 @@ nav {
 .toggle-main input[type="checkbox"]:checked ~ label::after {
   background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
 
-  transform: translateX(50px);
+  transform: translateX(40px);
 }
 
 .burger-icon {
@@ -89,7 +89,7 @@ nav {
   width: 1.5rem;
   height: 0.25rem;
   border-radius: 10px;
-  background-color: #555;
+  background-color: var(--terminal-text);
   transform-origin: 1px;
   transition: all 0.3s linear;
 }
@@ -114,15 +114,12 @@ nav {
   align-items: center;
   top: 0;
   right: 0;
-  background-color: #f3f4f8;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
   position: absolute;
   width: 50%;
   height: 100svh;
   z-index: 999;
-}
-
-.dark-theme-menu {
-  background-color: #26242e;
 }
 
 .menu-container li {
@@ -172,7 +169,7 @@ nav {
   left: 0;
   width: 50%;
   height: 100svh;
-  background-color: rgba(243, 244, 248, 0.4);
+  background-color: var(--screen-cover);
   z-index: 999;
 }
 
@@ -191,7 +188,7 @@ nav {
   }
   .toggle-main label {
     height: 30px;
-    width: 80px;
+    width: 70px;
   }
   .toggle-main label::after {
     width: 22px;

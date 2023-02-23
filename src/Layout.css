@@ -1,13 +1,8 @@
 .container {
   height: 100svh;
   position: relative;
-  background-color: #f3f4f8;
-  color: #191919;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   display: flex;
   flex-flow: column;
-}
-
-.dark-theme {
-  background-color: #26242e;
-  color: #f3f4f8;
 }
