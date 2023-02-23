@@ -12,8 +12,12 @@ const Header = () => {
   };
 
   const toggleDarkThemeLanding = () => {
-    const root = document.querySelector(":root");
-    root.classList.toggle(".dark-theme");
+    const container = document.querySelector(".container");
+    container.classList.toggle("dark-theme");
+    const burger = document.querySelectorAll(".burger");
+    burger.forEach((el) => el.classList.toggle("dark-theme-burger"));
+    const menuContainer = document.querySelector(".menu-container");
+    menuContainer.classList.toggle("dark-theme-menu");
   };
 
   return (
