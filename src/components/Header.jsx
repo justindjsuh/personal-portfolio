@@ -4,9 +4,16 @@ import SideMenu from "./SideMenu";
 
 const Header = () => {
   const [menuState, setMenuState] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const toggleMenu = () => {
-    setMenuState(!menuState);
+    setIsMounted(!isMounted);
+    if (!menuState) setMenuState(true);
+  };
+
+  const toggleDarkThemeLanding = () => {
+    const root = document.querySelector(":root");
+    root.classList.toggle(".dark-theme");
   };
 
   return (
@@ -17,11 +24,20 @@ const Header = () => {
         </div>
         <div className="right-nav">
           <div className="toggle">
-            <input type="checkbox" id="toggle" />
+            <input
+              onClick={toggleDarkThemeLanding}
+              type="checkbox"
+              id="toggle"
+            />
             <label htmlFor="toggle"></label>
           </div>
           <div className="menu">
-            <SideMenu menuState={menuState} toggleMenu={toggleMenu} />
+            <SideMenu
+              isMounted={isMounted}
+              menuState={menuState}
+              setMenuState={setMenuState}
+              toggleMenu={toggleMenu}
+            />
           </div>
         </div>
       </nav>
