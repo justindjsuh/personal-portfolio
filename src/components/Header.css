@@ -69,7 +69,9 @@ nav {
   width: 2rem;
   height: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
   flex-flow: column nowrap;
   z-index: 9999;
   padding: 0.8rem;
@@ -84,7 +86,7 @@ nav {
 }
 
 .burger {
-  width: 2rem;
+  width: 1.5rem;
   height: 0.25rem;
   border-radius: 10px;
   background-color: #555;
@@ -97,7 +99,7 @@ nav {
 }
 
 .burger1.isOpen {
-  transform: translateX(5px) rotate(45deg);
+  transform: translateX(5px) translateY(2px) rotate(45deg);
 }
 .burger2.isOpen {
   opacity: 0;
@@ -171,6 +173,7 @@ nav {
   width: 50%;
   height: 100svh;
   background-color: rgba(243, 244, 248, 0.4);
+  z-index: 999;
 }
 
 @media (max-width: 700px) {
@@ -185,5 +188,13 @@ nav {
   }
   nav {
     padding: 2rem;
+  }
+  .toggle-main label {
+    height: 30px;
+    width: 80px;
+  }
+  .toggle-main label::after {
+    width: 22px;
+    height: 22px;
   }
 }
