@@ -3,6 +3,8 @@
   position: relative;
   background-color: #f3f4f8;
   color: #191919;
+  display: flex;
+  flex-flow: column;
 }
 
 .dark-theme {

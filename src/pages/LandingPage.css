@@ -1,0 +1,149 @@
+.body-content {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-header {
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.header-btns {
+  display: flex;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.header-btn1 {
+  background-color: #f9685c;
+}
+
+.header-btn2 {
+  background-color: #f7c23f;
+}
+
+.header-btn3 {
+  background-color: #1cc947;
+}
+
+.header-btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 180px;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.terminal-container {
+  background-color: #f3f4f8;
+  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.3);
+  width: 70%;
+}
+
+.terminal-bg-text {
+  margin: 1rem 2rem;
+  align-self: flex-start;
+}
+
+.terminal-bg-text p {
+  color: rgba(79, 78, 78, 0.5);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.terminal-body {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-main-text {
+  margin: 5rem;
+}
+
+.terminal-main-text p {
+  margin: 0;
+  font-size: 84px;
+  font-weight: 500;
+  line-height: 1;
+  z-index: 5;
+}
+
+.terminal-main-text span:first-child {
+  color: #f15025;
+}
+
+.gsap-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.gsap-animation .box {
+  position: absolute;
+  bottom: 5px;
+  display: inline-block;
+  background-color: #f15025;
+  height: 10px;
+  z-index: -1;
+}
+
+.gsap-animation .hi {
+  display: inline-block;
+}
+
+.terminal-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.terminal-btn {
+  all: unset;
+  background-color: #efefef;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .terminal-container {
+    width: 95%;
+  }
+  .terminal-main-text p {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .terminal-main-text {
+    margin: 2rem 0;
+  }
+  .header-btns {
+    display: flex;
+    gap: 5px;
+    margin-left: 10px;
+  }
+  .header-btn {
+    height: 15px;
+    width: 15px;
+    border-radius: 180px;
+  }
+
+  .header-text p {
+    margin: 0;
+    text-align: center;
+  }
+}

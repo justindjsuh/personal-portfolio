@@ -27,13 +27,13 @@ const Header = () => {
           <img src="/logo.png" alt="logo with a hand drawn J" />
         </div>
         <div className="right-nav">
-          <div className="toggle">
+          <div className="toggle-main">
             <input
               onClick={toggleDarkThemeLanding}
               type="checkbox"
               id="toggle"
             />
-            <label htmlFor="toggle"></label>
+            <label htmlFor="toggle-main"></label>
           </div>
           <div className="menu">
             <SideMenu

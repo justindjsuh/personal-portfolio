@@ -12,6 +12,18 @@ function App() {
         <Route path="/home" element={<Layout />}>
           <Route index element={<LandingPage />} />
         </Route>
+        <Route path="/about" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+        <Route path="/experience" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+        <Route path="/projects" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
+        <Route path="/contact" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
       </Routes>
     </div>
   );

@@ -1,3 +1,4 @@
+// Styles for conditional side menu animations
 const mountedStyle = {
   animation: "fadeIn 1s ease-in-out",
 };
@@ -7,6 +8,13 @@ const unmountedStyle = {
   animationFillMode: "forwards",
 };
 
+/*
+ * @isMounted: boolean | determine whether the side menu is opened or not
+ * @menuState: boolean | determines whether the side menu should be open or not
+ * @setMenuState: setter function | sets menuState state variable
+ * @toggleMenu: function | sets both isMounted and menuState to the opposing boolean
+ *
+ */
 const SideMenu = ({ isMounted, menuState, setMenuState, toggleMenu }) => {
   return (
     <div className="side-menu">
