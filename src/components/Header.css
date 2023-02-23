@@ -2,12 +2,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .left-nav img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .right-nav {
@@ -16,17 +16,17 @@ nav {
   gap: 2rem;
 }
 
-.toggle {
+.toggle-main {
   all: unset;
   display: flex;
   align-items: center;
 }
 
-.toggle input[type="checkbox"] {
+.toggle-main input[type="checkbox"] {
   display: none;
 }
 
-.toggle label {
+.toggle-main label {
   margin: 0;
   background-color: #f3f4f8;
   border: 2px solid #f15025;
@@ -39,7 +39,7 @@ nav {
   height: 50px;
 }
 
-.toggle label::after {
+.toggle-main label::after {
   background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   border-radius: 50%;
   content: " ";
@@ -53,12 +53,12 @@ nav {
   height: 42px;
 }
 
-.toggle input[type="checkbox"]:checked ~ label {
+.toggle-main input[type="checkbox"]:checked ~ label {
   background-color: #26242e;
   border-color: #8983f7;
 }
 
-.toggle input[type="checkbox"]:checked ~ label::after {
+.toggle-main input[type="checkbox"]:checked ~ label::after {
   background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
 
   transform: translateX(50px);
@@ -81,9 +81,6 @@ nav {
 .burger-icon:active {
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.55);
   transform: translateY(4px);
-}
-
-@keyframes pushdown {
 }
 
 .burger {
