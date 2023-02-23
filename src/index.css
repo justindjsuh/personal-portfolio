@@ -24,9 +24,14 @@
   --bg-primary: #26242e;
   --terminal-offwhite: #1f1d29;
   --terminal-border: #23212e;
-  --terminal-text: #b7b4b4;
+  --terminal-text: #cfcaca;
   --text-accent: #92aef9;
   --terminal-bg-text: rgba(255, 255, 255, 0.5);
   --screen-cover: rgba(38, 36, 46, 0.5);
   --button-hover: #1f1d29;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }

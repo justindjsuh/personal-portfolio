@@ -64,6 +64,10 @@ nav {
   transform: translateX(40px);
 }
 
+/* .side-menu {
+  overflow-x: auto;
+} */
+
 .burger-icon {
   position: relative;
   width: 2rem;
