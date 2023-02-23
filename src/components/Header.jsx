@@ -31,7 +31,7 @@ const Header = () => {
             <input
               onClick={toggleDarkThemeLanding}
               type="checkbox"
-              id="toggle"
+              id="toggle-main"
             />
             <label htmlFor="toggle-main"></label>
           </div>

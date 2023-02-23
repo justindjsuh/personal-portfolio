@@ -4,7 +4,12 @@ import { useEffect } from "react";
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  const words = ["web developer.", "software engineer.", "musician.", "gamer."];
+  const words = [
+    " web developer.",
+    " software engineer.",
+    " musician.",
+    " gamer.",
+  ];
 
   useEffect(() => {
     gsap.registerPlugin(TextPlugin);
