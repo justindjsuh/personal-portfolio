@@ -20,7 +20,23 @@ const LandingPage = () => {
       delay: 2,
       ease: "power4.inOut",
     });
-    gsap.from(".hi", { opacity: 0, y: 100, delay: 2, duration: 0.5 });
+    gsap.from(".hi", {
+      y: 100,
+      duration: 1,
+      delay: 2.5,
+      ease: "power3.out",
+      onComplete: () => {
+        masterTl.play();
+      },
+    });
+
+    let masterTl = gsap.timeline({ repeat: -1 }).pause();
+
+    words.forEach((word) => {
+      let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 });
+      tl.to(".text", { duration: 1, text: word });
+      masterTl.add(tl);
+    });
   });
 
   return (
