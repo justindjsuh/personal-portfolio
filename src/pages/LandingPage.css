@@ -97,10 +97,10 @@
 
 .gsap-animation .box {
   position: absolute;
-  bottom: 5px;
+  bottom: 8px;
   display: inline-block;
   background-color: var(--text-accent);
-  height: 10px;
+  height: 20px;
   z-index: -1;
 }
 

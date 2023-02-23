@@ -11,9 +11,19 @@ function Intro() {
       navigate("/home");
     }, 1000);
   };
+
+  const toggleDarkThemeLanding = () => {
+    let attributeVal = document.documentElement.getAttribute("data-theme");
+    if (attributeVal === "dark") {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  };
+
   return (
     <div className="App">
-      <input type="checkbox" id="switch" />
+      <input onClick={toggleDarkThemeLanding} type="checkbox" id="switch" />
       <div className="app">
         <div className="body">
           <div className="content">

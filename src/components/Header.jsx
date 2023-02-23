@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 import SideMenu from "./SideMenu";
 
 const Header = () => {
   const [menuState, setMenuState] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    document.documentElement.getAttribute("data-theme")
+  );
 
   const toggleMenu = () => {
     setIsMounted(!isMounted);
@@ -15,8 +18,10 @@ const Header = () => {
     let attributeVal = document.documentElement.getAttribute("data-theme");
     if (attributeVal === "dark") {
       document.documentElement.setAttribute("data-theme", "light");
+      setDarkMode("light");
     } else {
       document.documentElement.setAttribute("data-theme", "dark");
+      setDarkMode("dark");
     }
   };
 
@@ -32,6 +37,7 @@ const Header = () => {
               onClick={toggleDarkThemeLanding}
               type="checkbox"
               id="toggle-main"
+              checked={darkMode === "dark"}
             />
             <label htmlFor="toggle-main"></label>
           </div>
