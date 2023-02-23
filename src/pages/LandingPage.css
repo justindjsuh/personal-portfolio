@@ -42,6 +42,8 @@
 .header-text p {
   margin: 0;
   font-size: 18px;
+  font-weight: 500;
+  color: #4f4e4e;
   text-align: center;
 }
 
