@@ -71,7 +71,8 @@
 }
 
 .terminal-main-text {
-  margin: 5rem;
+  margin: 5rem 0;
+  width: 80%;
 }
 
 .terminal-main-text p {
@@ -125,7 +126,7 @@
     width: 95%;
   }
   .terminal-main-text p {
-    font-size: 36px;
+    font-size: 56px;
     font-weight: 600;
   }
   .terminal-main-text {
@@ -141,9 +142,11 @@
     width: 15px;
     border-radius: 180px;
   }
-
   .header-text p {
     margin: 0;
     text-align: center;
+  }
+  .terminal-main-text {
+    width: 100%;
   }
 }

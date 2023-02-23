@@ -1,11 +1,13 @@
 import gsap from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 import { useEffect } from "react";
 import "./LandingPage.css";
 
 const LandingPage = () => {
-  const words = ["web developer", "software engineer", "musician", "gamer"];
+  const words = ["web developer.", "software engineer.", "musician.", "gamer."];
 
   useEffect(() => {
+    gsap.registerPlugin(TextPlugin);
     let cursor = gsap.to(".cursor", {
       opacity: 0,
       ease: "power2.inOut",
@@ -16,7 +18,7 @@ const LandingPage = () => {
 
     boxTl.to(".box", {
       duration: 1,
-      width: "180px",
+      width: "50px",
       delay: 2,
       ease: "power4.inOut",
     });
