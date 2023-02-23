@@ -15,7 +15,12 @@ const SideMenu = ({ isMounted, menuState, setMenuState, toggleMenu }) => {
         <div className={`burger burger2 ${menuState ? "isOpen" : ""}`} />
         <div className={`burger burger3 ${menuState ? "isOpen" : ""}`} />
       </div>
-      {menuState && <div className="screen-cover"></div>}
+      {menuState && (
+        <div
+          style={isMounted ? mountedStyle : unmountedStyle}
+          className="screen-cover"
+        ></div>
+      )}
       {menuState && (
         <div
           className={`menu-container`}

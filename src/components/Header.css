@@ -18,6 +18,8 @@ nav {
 
 .toggle {
   all: unset;
+  display: flex;
+  align-items: center;
 }
 
 .toggle input[type="checkbox"] {
@@ -26,8 +28,8 @@ nav {
 
 .toggle label {
   margin: 0;
-  background-color: #777;
-  border: 2px solid #555;
+  background-color: #f3f4f8;
+  border: 2px solid #f15025;
   border-radius: 50px;
   cursor: pointer;
   display: inline-block;
@@ -38,7 +40,7 @@ nav {
 }
 
 .toggle label::after {
-  background-color: #555;
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
   border-radius: 50%;
   content: " ";
   cursor: pointer;
@@ -52,12 +54,13 @@ nav {
 }
 
 .toggle input[type="checkbox"]:checked ~ label {
-  background-color: #f15025;
-  border-color: #f13c0a;
+  background-color: #26242e;
+  border-color: #8983f7;
 }
 
 .toggle input[type="checkbox"]:checked ~ label::after {
-  background-color: #af310e;
+  background: linear-gradient(40deg, #8983f7, #a3dafb 70%);
+
   transform: translateX(50px);
 }
 
@@ -72,6 +75,7 @@ nav {
   padding: 0.8rem;
   border-radius: 180px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
 }
 
 .burger-icon:active {
@@ -89,6 +93,10 @@ nav {
   background-color: #555;
   transform-origin: 1px;
   transition: all 0.3s linear;
+}
+
+.dark-theme-burger {
+  background-color: #a3dafb;
 }
 
 .burger1.isOpen {
@@ -112,6 +120,10 @@ nav {
   width: 50%;
   height: 100svh;
   z-index: 999;
+}
+
+.dark-theme-menu {
+  background-color: #26242e;
 }
 
 .menu-container li {
