@@ -79,7 +79,7 @@ const LandingPage = () => {
             cd About/ &#8594;
           </button>
           <button className="terminal-btn terminal-btn2">
-            cd Experience/ &#8594;
+            cd Experience/ <span>&#8594;</span>
           </button>
           <button className="terminal-btn terminal-btn3">
             cd Projects/ &#8594;
