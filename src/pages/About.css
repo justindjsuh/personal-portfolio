@@ -1,0 +1,19 @@
+.about-container {
+  width: 60%;
+}
+
+.about-content h1 {
+  font-size: 86px;
+  margin: 0;
+}
+
+.toolkit-container p {
+  font-size: 180px;
+  margin: 0;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.toolkit {
+  background-color: var(--bg-primary);
+}
