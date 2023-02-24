@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -11,6 +11,37 @@ const LandingPage = () => {
     " musician.",
     " gamer.",
   ];
+
+  const navigate = useNavigate();
+
+  const aboutNav = () => {
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    setTimeout(() => {
+      navigate("/about");
+    }, 1000);
+  };
+  const experienceNav = () => {
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    setTimeout(() => {
+      navigate("/experience");
+    }, 1000);
+  };
+  const projectsNav = () => {
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    setTimeout(() => {
+      navigate("/projects");
+    }, 1000);
+  };
+  const contactNav = () => {
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    setTimeout(() => {
+      navigate("/contact");
+    }, 1000);
+  };
 
   useEffect(() => {
     const page = document.querySelector(".App");
@@ -81,26 +112,21 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="terminal-btns">
-          <Link to="/about">
-            <button className="terminal-btn terminal-btn1">
-              cd About/ &#8594;
-            </button>
-          </Link>
-          <Link to="/experience">
-            <button className="terminal-btn terminal-btn2">
-              cd Experience/ <span>&#8594;</span>
-            </button>
-          </Link>
-          <Link to="/projects">
-            <button className="terminal-btn terminal-btn3">
-              cd Projects/ &#8594;
-            </button>
-          </Link>
-          <Link to="/contact">
-            <button className="terminal-btn terminal-btn4">
-              cd Contact/ &#8594;
-            </button>
-          </Link>
+          <button onClick={aboutNav} className="terminal-btn terminal-btn1">
+            cd About/ &#8594;
+          </button>
+          <button
+            onClick={experienceNav}
+            className="terminal-btn terminal-btn2"
+          >
+            cd Experience/ <span>&#8594;</span>
+          </button>
+          <button onClick={projectsNav} className="terminal-btn terminal-btn3">
+            cd Projects/ &#8594;
+          </button>
+          <button onClick={contactNav} className="terminal-btn terminal-btn4">
+            cd Contact/ &#8594;
+          </button>
         </div>
       </div>
     </div>
