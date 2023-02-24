@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
 const LandingPage = () => {
@@ -12,6 +13,11 @@ const LandingPage = () => {
   ];
 
   useEffect(() => {
+    const page = document.querySelector(".App");
+    setTimeout(() => {
+      page.classList.remove("animate_content");
+    }, 2000);
+
     gsap.registerPlugin(TextPlugin);
     let cursor = gsap.to(".cursor", {
       opacity: 0,
@@ -75,18 +81,26 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="terminal-btns">
-          <button className="terminal-btn terminal-btn1">
-            cd About/ &#8594;
-          </button>
-          <button className="terminal-btn terminal-btn2">
-            cd Experience/ <span>&#8594;</span>
-          </button>
-          <button className="terminal-btn terminal-btn3">
-            cd Projects/ &#8594;
-          </button>
-          <button className="terminal-btn terminal-btn4">
-            cd Contact/ &#8594;
-          </button>
+          <Link to="/about">
+            <button className="terminal-btn terminal-btn1">
+              cd About/ &#8594;
+            </button>
+          </Link>
+          <Link to="/experience">
+            <button className="terminal-btn terminal-btn2">
+              cd Experience/ <span>&#8594;</span>
+            </button>
+          </Link>
+          <Link to="/projects">
+            <button className="terminal-btn terminal-btn3">
+              cd Projects/ &#8594;
+            </button>
+          </Link>
+          <Link to="/contact">
+            <button className="terminal-btn terminal-btn4">
+              cd Contact/ &#8594;
+            </button>
+          </Link>
         </div>
       </div>
     </div>
