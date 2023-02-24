@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import gsap from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
 
 // Styles for conditional side menu animations
 const mountedStyle = {
@@ -63,6 +66,21 @@ const SideMenu = ({
     }
   };
 
+  useEffect(() => {
+    gsap.registerPlugin(TextPlugin);
+
+    const navLinks = document.querySelectorAll(".nav-option");
+    if (navLinks.length && isMounted) {
+      console.log("HELLO");
+      gsap.from(navLinks, {
+        duration: 1,
+        x: 300,
+        delay: 0.5,
+        ease: "power3.out",
+      });
+    }
+  });
+
   return (
     <div className="side-menu">
       <div className="burger-icon" onClick={toggleMenu}>
@@ -88,31 +106,41 @@ const SideMenu = ({
             <li>
               <div className="nav-option">
                 <p>01</p>
-                <p onClick={handleNavigate}>Home</p>
+                <p className="nav-link" onClick={handleNavigate}>
+                  Home
+                </p>
               </div>
             </li>
             <li>
               <div className="nav-option">
                 <p>02</p>
-                <p onClick={handleNavigate}>About</p>
+                <p className="nav-link" onClick={handleNavigate}>
+                  About
+                </p>
               </div>
             </li>
             <li>
               <div className="nav-option">
                 <p>03</p>
-                <p onClick={handleNavigate}>Experience</p>
+                <p className="nav-link" onClick={handleNavigate}>
+                  Experience
+                </p>
               </div>
             </li>
             <li>
               <div className="nav-option">
                 <p>04</p>
-                <p onClick={handleNavigate}>Projects</p>
+                <p className="nav-link" onClick={handleNavigate}>
+                  Projects
+                </p>
               </div>
             </li>
             <li>
               <div className="nav-option">
                 <p>05</p>
-                <p onClick={handleNavigate}>Contact</p>
+                <p className="nav-link" onClick={handleNavigate}>
+                  Contact
+                </p>
               </div>
             </li>
           </ul>
