@@ -10,6 +10,11 @@ nav {
   height: 40%;
 }
 
+.left-nav button {
+  all: unset;
+  cursor: pointer;
+}
+
 .right-nav {
   display: flex;
   align-items: center;

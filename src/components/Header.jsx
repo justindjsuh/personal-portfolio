@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 import SideMenu from "./SideMenu";
 
@@ -8,6 +9,15 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(
     document.documentElement.getAttribute("data-theme")
   );
+  const navigate = useNavigate();
+
+  const handleHome = () => {
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    setTimeout(() => {
+      navigate("/home");
+    }, 1000);
+  };
 
   const toggleMenu = () => {
     setIsMounted(!isMounted);
@@ -29,7 +39,9 @@ const Header = () => {
     <div className="header">
       <nav>
         <div className="left-nav">
-          <img src="/logo.png" alt="logo with a hand drawn J" />
+          <button onClick={handleHome}>
+            <img src="/logo.png" alt="logo with a hand drawn J" />
+          </button>
         </div>
         <div className="right-nav">
           <div className="toggle-main">
@@ -37,13 +49,14 @@ const Header = () => {
               onClick={toggleDarkThemeLanding}
               type="checkbox"
               id="toggle-main"
-              checked={darkMode === "dark"}
+              defaultChecked={darkMode === "dark"}
             />
             <label htmlFor="toggle-main"></label>
           </div>
           <div className="menu">
             <SideMenu
               isMounted={isMounted}
+              setIsMounted={setIsMounted}
               menuState={menuState}
               setMenuState={setMenuState}
               toggleMenu={toggleMenu}

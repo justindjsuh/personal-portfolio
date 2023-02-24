@@ -115,6 +115,10 @@
   margin: 2rem;
 }
 
+.terminal-btns a {
+  text-decoration: none;
+}
+
 .terminal-btn {
   all: unset;
   font-weight: 600;
