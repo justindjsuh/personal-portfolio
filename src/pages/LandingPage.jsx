@@ -29,7 +29,7 @@ const LandingPage = () => {
 
     boxTl.to(".box", {
       duration: 1,
-      width: "9vw",
+      width: "8vw",
       delay: 2,
       ease: "power4.inOut",
     });
