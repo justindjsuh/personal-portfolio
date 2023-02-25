@@ -9,7 +9,7 @@
 
 @media (max-width: 1440px) and (max-height: 700px) {
   .container {
-    height: auto;
+    height: 130svh;
   }
 }
 
