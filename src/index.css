@@ -11,6 +11,7 @@
   --text-accent: #f15025;
   --screen-cover: rgba(243, 244, 248, 0.4);
   --button-hover: #e7e7e7;
+  --faded-header: rgba(0, 0, 0, 0.1);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,9 +30,14 @@
   --terminal-bg-text: rgba(255, 255, 255, 0.5);
   --screen-cover: rgba(38, 36, 46, 0.5);
   --button-hover: #1f1d29;
+  --faded-header: rgba(255, 255, 255, 0.2);
 }
 
 html,
 body {
   overflow-x: hidden;
+}
+
+html.menu-open {
+  overflow-y: hidden;
 }

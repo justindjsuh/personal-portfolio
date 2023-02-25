@@ -20,6 +20,9 @@ const Header = () => {
   };
 
   const toggleMenu = () => {
+    const html = document.querySelector("html");
+    html.classList.toggle("menu-open");
+
     setIsMounted(!isMounted);
     if (!menuState) setMenuState(true);
   };

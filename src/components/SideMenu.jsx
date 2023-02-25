@@ -30,9 +30,10 @@ const SideMenu = ({
   const navigate = useNavigate();
 
   const handleNavigate = (e) => {
+    const html = document.querySelector("html");
     const page = document.querySelector(".App");
     page.classList.add("animate_content");
-
+    html.classList.remove("menu-open");
     if (e.target.innerHTML === "Home") {
       setTimeout(() => {
         setMenuState(false);
