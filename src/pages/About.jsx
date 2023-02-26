@@ -13,14 +13,21 @@ const About = () => {
       <div className="about-container">
         <div className="about-content">
           <h1>About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
+          <div className="about-text">
+            <p>
+              My name is Justin Suh. I'm a <span>curious</span> and{" "}
+              <span>passionate</span> fullstack software engineer with a B.S. in
+              Computing & Security Technology and a Fullstack Academy grad. My
+              passions generally consist of games, photography, and music. I
+              don&apos;t own a cat yet, but I hope to own one some day.
+            </p>
+            <p>
+              I aspire to build beautiful products, both <span>visually</span>{" "}
+              and <span>functionally</span>, to enhance{" "}
+              <span>user experience.</span> I specialize in working with the
+              PERN stack to bring concepts to life in a tangible way.
+            </p>
+          </div>
         </div>
         <div className="toolkit-container">
           <p className="toolkit-bg-header">Toolkit</p>
