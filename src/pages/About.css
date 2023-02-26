@@ -11,9 +11,14 @@
   flex-flow: column;
 }
 
+.about-content {
+  width: 80%;
+}
+
 .about-content h1 {
   font-size: 5vw;
   margin: 0;
+  color: var(--text-accent);
 }
 
 .about-content p {
@@ -21,9 +26,20 @@
   margin: 0;
 }
 
+.about-text {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+}
+
+.about-text span {
+  color: var(--text-accent);
+  font-weight: 500;
+}
+
 .toolkit-bg-header {
-  transform: translateX(-70px);
-  font-size: 180px;
+  transform: translateX(-50px);
+  font-size: 140px;
   margin: 0;
   font-weight: 600;
   color: var(--faded-header);
@@ -35,14 +51,13 @@
   gap: 1rem;
   padding: 0 2rem 2rem 2rem;
   /* justify-content: space-between; */
-  transform: translateY(-90px);
+  transform: translateY(-70px);
   background-color: var(--bg-primary);
-  box-shadow: 0px 20px 30px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.3);
 }
 
 .tool-section-header {
   font-size: 1vw;
-  /* font-size: 16px; */
   font-weight: 600;
 }
 
