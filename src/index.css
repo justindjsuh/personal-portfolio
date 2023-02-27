@@ -16,6 +16,7 @@
   --primary-gradient: #f15025;
   --secondary-gradient: #f18425;
 
+  overflow-x: hidden;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +42,6 @@
 
 html,
 body {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
