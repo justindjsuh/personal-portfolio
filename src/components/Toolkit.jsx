@@ -3,7 +3,9 @@ import "../pages/About.css";
 const Toolkit = () => {
   return (
     <div className="toolkit-container">
-      <p className="toolkit-bg-header">Toolkit</p>
+      <p id="toolkit" className="toolkit-bg-header">
+        Toolkit
+      </p>
       <div className="toolkit">
         <div className="tool-section frontend">
           <p className="tool-section-header frontend-header">Frontend</p>

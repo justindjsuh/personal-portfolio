@@ -1,6 +1,6 @@
 .about {
   background-color: var(--bg-primary);
-  height: calc(100vh - 150px);
+  min-height: calc(100vh - 150px);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,6 +10,7 @@
 
 .toolkit-container {
   min-height: 100svh;
+  background-color: var(--bg-primary);
 }
 
 .about-container {
@@ -20,12 +21,10 @@
 }
 
 #borderLeft {
-  /* border-left: 2px solid #0004ff; */
   position: absolute;
-  top: -10px;
+  top: -20px;
   bottom: 50%;
   left: -40px;
-  /* box-shadow: 0 30px 40px rgba(0, 0, 0, 0.1); */
 }
 
 .profile-links svg {
@@ -170,10 +169,88 @@
   font-weight: 600;
 }
 
+.my-toolkit {
+  color: var(--text-accent);
+  position: relative;
+  font-weight: 400;
+  bottom: 10px;
+}
+
 .tool-logos {
   display: flex;
   flex-wrap: wrap;
   gap: 1.3rem;
+}
+
+[data-ca3_icon]::before {
+  font-weight: normal;
+  content: attr(data-ca3_icon);
+}
+
+.down-chevron {
+  fill: var(--text-accent);
+}
+
+.ca3-scroll-down-link {
+  cursor: pointer;
+  height: 60px;
+  width: 80px;
+  margin: 0px 0 0 -40px;
+  line-height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  color: var(--text-accent);
+  text-align: center;
+  font-size: 70px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+  -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+  animation: ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0% {
+    -moz-transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
+@keyframes ca3_fade_move_down {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -192,6 +269,10 @@
 }
 
 @media (max-width: 700px) {
+  .about {
+    margin-top: 1rem;
+    gap: 2rem;
+  }
   .toolkit-bg-header {
     transform: translateY(0);
     font-size: 66px;
@@ -201,5 +282,18 @@
   }
   .single-tool-container {
     width: 30%;
+  }
+  .about-container {
+    width: 80%;
+  }
+  .about-content h1 {
+    font-size: 12vw;
+  }
+
+  .about-content p {
+    font-size: 4vw;
+  }
+  .ca3-scroll-down-link {
+    visibility: hidden;
   }
 }
