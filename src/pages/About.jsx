@@ -122,18 +122,18 @@ const About = () => {
         </div>
       </div>
       {/* <p className="my-toolkit">My Toolkit</p> */}
-      <a href="#toolkit" class="ca3-scroll-down-link ca3-scroll-down-arrow">
+      <a href="#toolkit" className="ca3-scroll-down-link ca3-scroll-down-arrow">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="50"
           fill="currentColor"
-          class="bi bi-chevron-down"
+          className="bi bi-chevron-down"
           viewBox="0 0 16 16"
         >
           <path
-            class="down-chevron"
-            fill-rule="evenodd"
+            className="down-chevron"
+            fillRule="evenodd"
             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
           />
         </svg>
