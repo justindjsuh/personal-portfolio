@@ -6,9 +6,3 @@
   display: flex;
   flex-flow: column;
 }
-
-@media (max-width: 700px) {
-  .container {
-    height: auto;
-  }
-}

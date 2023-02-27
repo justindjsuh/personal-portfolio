@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Toolkit from "../components/Toolkit";
 import "./About.css";
 
 const About = () => {
@@ -9,127 +10,136 @@ const About = () => {
     }, 2000);
   });
   return (
-    <div className="about">
-      <div className="about-container">
-        <div className="about-content">
-          <h1>About Me</h1>
-          <div className="about-text">
-            <p>
-              My name is Justin Suh. I'm a <span>curious</span> and{" "}
-              <span>passionate</span> fullstack software engineer with a B.S. in
-              Computing & Security Technology and a Fullstack Academy grad. My
-              passions generally consist of games, photography, and music. I
-              don&apos;t own a cat yet, but I hope to own one some day.
-            </p>
-            <p>
-              I aspire to build beautiful products, both <span>visually</span>{" "}
-              and <span>functionally</span>, to enhance{" "}
-              <span>user experience.</span> I specialize in working with the
-              PERN stack to bring concepts to life in a tangible way.
-            </p>
+    <>
+      <div className="about">
+        <div className="about-container">
+          <div id="borderLeft">
+            <svg
+              width="200"
+              height="200"
+              viewBox="0 0 200 200"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clipPath="url(#clip0_90_587)">
+                <mask id="path-1-inside-1_90_587" fill="white">
+                  <path d="M0 20C0 8.95431 8.95431 0 20 0H180C191.046 0 200 8.95431 200 20V180C200 191.046 191.046 200 180 200H20C8.95431 200 0 191.046 0 180V20Z" />
+                </mask>
+                <path
+                  d="M-14 20C-14 1.22232 1.22232 -14 20 -14H166C184.778 -14 200 1.22232 200 20C200 16.6863 191.046 14 180 14H20C16.6863 14 14 16.6863 14 20H-14ZM200 200H0H200ZM20 200C1.22232 200 -14 184.778 -14 166V20C-14 1.22232 1.22232 -14 20 -14V14C16.6863 14 14 16.6863 14 20V180C14 191.046 16.6863 200 20 200ZM200 0V200V0Z"
+                  fill="url(#paint0_linear_90_587)"
+                  mask="url(#path-1-inside-1_90_587)"
+                />
+              </g>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_90_587"
+                  x1="0"
+                  y1="0"
+                  x2="200"
+                  y2="200"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop className="primary-stop" stopColor="#F15025" />
+                  <stop
+                    className="secondary-stop"
+                    offset="0.3125"
+                    stopColor="#F18425"
+                    stopOpacity="0.447917"
+                  />
+                  <stop
+                    className="secondary-stop"
+                    offset="0.473958"
+                    stopColor="#F18425"
+                    stopOpacity="0"
+                  />
+                  <stop
+                    className="secondary-stop"
+                    offset="1"
+                    stopColor="#F18425"
+                    stopOpacity="0"
+                  />
+                </linearGradient>
+                <clipPath id="clip0_90_587">
+                  <rect width="200" height="200" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div className="about-content">
+            <h1>About Me</h1>
+            <div className="about-text">
+              <p>
+                My name is Justin Suh. I'm a <span>curious</span> and{" "}
+                <span>passionate</span> fullstack software engineer with a B.S.
+                in Computing & Security Technology and a Fullstack Academy grad.
+                My passions generally consist of games, photography, and music.
+                I don&apos;t own a cat yet, but I hope to adopt one some day.
+              </p>
+              <p>
+                I aspire to build beautiful products, both <span>visually</span>{" "}
+                and <span>functionally</span>, to enhance{" "}
+                <span>user experience.</span> I specialize in working with the
+                PERN stack to bring concepts to life in a tangible way.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="toolkit-container">
-          <p className="toolkit-bg-header">Toolkit</p>
-          <div className="toolkit">
-            <div className="tool-section frontend">
-              <p className="tool-section-header frontend-header">Frontend</p>
-              <div className="tool-logos">
-                <div className="single-tool-container">
-                  <img
-                    src="/toolkit-logos/javascript.png"
-                    alt="javascript logo"
-                  />
-                  <p>JavaScript</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/react.png" alt="react logo" />
-                  <p>React.js</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/html.png" alt="html logo" />
-                  <p>HTML</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/css.png" alt="css logo" />
-                  <p>CSS</p>
-                </div>
-              </div>
-            </div>
-            <div className="tool-section backend">
-              <p className="tool-section-header backend-header">Backend</p>
-              <div className="tool-logos">
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/express.png" alt="express logo" />
-                  <p>Express.js</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/node.png" alt="node logo" />
-                  <p>Node.js</p>
-                </div>
-                <div className="single-tool-container">
-                  <img
-                    src="/toolkit-logos/sequelize.png"
-                    alt="sequelize logo"
-                  />
-                  <p>Sequelize</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/postgres.png" alt="postgres logo" />
-                  <p>PostgreSQL</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/rest-api.png" alt="rest-api logo" />
-                  <p>REST API</p>
-                </div>
-              </div>
-            </div>
-            <div className="tool-section tools">
-              <p className="tool-section-header tools-header">Tools</p>
-              <div className="tool-logos">
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/webpack.png" alt="webpack logo" />
-                  <p>Webpack</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/git.png" alt="git logo" />
-                  <p>Git</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/vscode.png" alt="vscode logo" />
-                  <p>VS Code</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/next-js.png" alt="next-js logo" />
-                  <p>Next.js</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/github.png" alt="github logo" />
-                  <p>GitHub</p>
-                </div>
-              </div>
-            </div>
-            <div className="tool-section learning">
-              <p className="tool-section-header learning-header">Learning</p>
-              <div className="tool-logos">
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/typescript.png" alt="ts-logo logo" />
-                  <p>TypeScript</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/java.png" alt="java logo" />
-                  <p>Java</p>
-                </div>
-                <div className="single-tool-container">
-                  <img src="/toolkit-logos/python.png" alt="python logo" />
-                  <p>Python</p>
-                </div>
-              </div>
-            </div>
+        <div className="pfp-container">
+          <div className="about-pfp">
+            <div className="pfp-layer"></div>
+          </div>
+          <div className="profile-links">
+            <a
+              href="https://www.linkedin.com/in/justin-suh98/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="50px"
+                height="50px"
+              >
+                <path d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z" />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/justindjsuh"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                width="50px"
+                height="50px"
+              >
+                <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+      {/* <p className="my-toolkit">My Toolkit</p> */}
+      <a href="#toolkit" className="ca3-scroll-down-link ca3-scroll-down-arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="currentColor"
+          className="bi bi-chevron-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            className="down-chevron"
+            fillRule="evenodd"
+            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </a>
+      <Toolkit />
+    </>
   );
 };
 
