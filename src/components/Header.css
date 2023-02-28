@@ -6,13 +6,20 @@ nav {
 }
 
 .left-nav img {
-  width: 40%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
 }
 
 .left-nav button {
-  all: unset;
+  width: 50%;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 1rem;
 }
 
 .right-nav {
@@ -68,10 +75,6 @@ nav {
 
   transform: translateX(40px);
 }
-
-/* .side-menu {
-  overflow-x: auto;
-} */
 
 .burger-icon {
   position: relative;
@@ -202,5 +205,25 @@ nav {
   .toggle-main label::after {
     width: 22px;
     height: 22px;
+  }
+  .nav-btns {
+    visibility: hidden;
+    width: 0;
+  }
+  .burger-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  .burger1.isOpen {
+    transform: translateX(4px) translateY(-1px) rotate(45deg);
+  }
+  .burger2.isOpen {
+    opacity: 0;
+  }
+  .burger3.isOpen {
+    transform: translateX(4px) rotate(-45deg);
+  }
+  .left-nav button {
+    width: 40%;
   }
 }

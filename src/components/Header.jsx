@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Header.css";
 import SideMenu from "./SideMenu";
 
@@ -9,7 +9,9 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(
     document.documentElement.getAttribute("data-theme")
   );
+  const [currentRoute, setCurrentRoute] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleHome = () => {
     const page = document.querySelector(".App");
@@ -38,6 +40,48 @@ const Header = () => {
     }
   };
 
+  const handleNavigate = (e) => {
+    const html = document.querySelector("html");
+    const page = document.querySelector(".App");
+    page.classList.add("animate_content");
+    html.classList.remove("menu-open");
+    if (e.target.innerHTML === "Home") {
+      setTimeout(() => {
+        setMenuState(false);
+        setIsMounted(false);
+        navigate("/home");
+      }, 1000);
+    } else if (e.target.innerHTML === "About") {
+      setTimeout(() => {
+        setMenuState(false);
+        setIsMounted(false);
+        navigate("/about");
+      }, 1000);
+    } else if (e.target.innerHTML === "Experience") {
+      setTimeout(() => {
+        setMenuState(false);
+        setIsMounted(false);
+        navigate("/experience");
+      }, 1000);
+    } else if (e.target.innerHTML === "Projects") {
+      setTimeout(() => {
+        setMenuState(false);
+        setIsMounted(false);
+        navigate("/projects");
+      }, 1000);
+    } else if (e.target.innerHTML === "Contact") {
+      setTimeout(() => {
+        setMenuState(false);
+        setIsMounted(false);
+        navigate("/contact");
+      }, 1000);
+    }
+  };
+
+  useEffect(() => {
+    setCurrentRoute(location.pathname);
+  });
+
   return (
     <div className="header">
       <nav>
@@ -46,6 +90,23 @@ const Header = () => {
             <img src="/logo.png" alt="logo with a hand drawn J" />
           </button>
         </div>
+        {currentRoute === "/home" ? null : (
+          <div className="nav-btns">
+            {console.log(currentRoute)}
+            <button className="nav-btn" onClick={handleNavigate}>
+              About
+            </button>
+            <button className="nav-btn" onClick={handleNavigate}>
+              Experience
+            </button>
+            <button className="nav-btn" onClick={handleNavigate}>
+              Projects
+            </button>
+            <button className="nav-btn" onClick={handleNavigate}>
+              Contact
+            </button>
+          </div>
+        )}
         <div className="right-nav">
           <div className="toggle-main">
             <input
