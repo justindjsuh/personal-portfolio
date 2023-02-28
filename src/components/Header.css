@@ -11,7 +11,7 @@ nav {
 }
 
 .left-nav button {
-  width: 40%;
+  width: 50%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -32,6 +32,7 @@ nav {
 .nav-btn {
   display: inline-block;
   position: relative;
+  font-size: 24px;
 }
 
 .nav-btn::after {
@@ -217,6 +218,12 @@ nav {
   height: 100svh;
   background-color: var(--screen-cover);
   z-index: 999;
+}
+
+@media (max-width: 1440px) {
+  .nav-btn {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 700px) {
