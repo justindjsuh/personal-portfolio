@@ -92,17 +92,40 @@ const Header = () => {
         </div>
         {currentRoute === "/home" ? null : (
           <div className="nav-btns">
-            {console.log(currentRoute)}
-            <button className="nav-btn" onClick={handleNavigate}>
+            <button
+              className={
+                currentRoute === "/about" ? "nav-btn current-page" : "nav-btn"
+              }
+              onClick={handleNavigate}
+            >
               About
             </button>
-            <button className="nav-btn" onClick={handleNavigate}>
+            <button
+              className={
+                currentRoute === "/experience"
+                  ? "nav-btn current-page"
+                  : "nav-btn"
+              }
+              onClick={handleNavigate}
+            >
               Experience
             </button>
-            <button className="nav-btn" onClick={handleNavigate}>
+            <button
+              className={
+                currentRoute === "/projects"
+                  ? "nav-btn current-page"
+                  : "nav-btn"
+              }
+              onClick={handleNavigate}
+            >
               Projects
             </button>
-            <button className="nav-btn" onClick={handleNavigate}>
+            <button
+              className={
+                currentRoute === "/contact" ? "nav-btn current-page" : "nav-btn"
+              }
+              onClick={handleNavigate}
+            >
               Contact
             </button>
           </div>

@@ -11,7 +11,7 @@ nav {
 }
 
 .left-nav button {
-  width: 50%;
+  width: 40%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -19,7 +19,41 @@ nav {
 
 .nav-btns {
   display: flex;
-  gap: 1rem;
+}
+
+.nav-btn {
+  all: unset;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 0 0.5rem;
+}
+
+.nav-btn {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--text-accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.current-page {
+  color: var(--text-accent);
 }
 
 .right-nav {
