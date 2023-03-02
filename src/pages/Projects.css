@@ -1,0 +1,161 @@
+.projects-page-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.projects-landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95svh;
+  background-color: var(--bg-primary);
+}
+
+.project-headline {
+  font-size: 120px;
+  text-align: center;
+  margin: 0;
+}
+
+.project-headline span {
+  background-color: var(--text-accent);
+  padding: 0 1rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: var(--bg-primary);
+  min-height: 100svh;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  max-width: 80rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  position: relative;
+  min-width: 45rem;
+  max-width: 45rem;
+  height: 30rem;
+  transform: translateX(-8rem);
+  transition: all 0.2s;
+}
+
+.project-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.project-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    var(--primary-gradient) 0%,
+    var(--secondary-gradient) 100%
+  );
+  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+  border-radius: 0.8rem;
+  opacity: 0.4;
+  transition: all 0.2s;
+}
+
+.project-img:hover::before {
+  opacity: 0;
+  z-index: -1;
+}
+
+.project-img:hover {
+  transform: translateX(-8rem) scale(1.03);
+}
+
+.project-title {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 2rem;
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+
+.project-info > p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.project-tools {
+  display: flex;
+  color: var(--text-accent);
+  font-weight: 500;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btns a {
+  all: unset;
+  background-color: transparent;
+  border: 1px solid var(--text-accent);
+  color: var(--text-accent);
+  font-weight: 500;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.project-btns a:hover {
+  background-color: var(--project-btn-hover);
+}
+
+@media (max-width: 1440px) {
+  .project-headline {
+    font-size: 80px;
+  }
+  .project {
+    max-width: 70rem;
+  }
+  .project-img {
+    min-width: 40rem;
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 1068px) {
+  .project {
+    max-width: 80rem;
+  }
+  .project-img {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 868px) {
+  .project {
+    max-width: 70rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    padding: 2.5rem;
+    flex-direction: column;
+  }
+  .project-img {
+    min-width: 100%;
+    transform: translate(0, -8rem);
+  }
+}
