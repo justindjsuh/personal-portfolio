@@ -11,6 +11,7 @@
   --text-accent: #f15025;
   --screen-cover: rgba(243, 244, 248, 0.4);
   --button-hover: #e7e7e7;
+  --project-btn-hover: rgba(241, 80, 37, 0.4);
   --faded-header: rgba(0, 0, 0, 0.1);
   --pfp-layer: rgb(241, 80, 37, 0.15);
   --primary-gradient: #f15025;
@@ -34,6 +35,7 @@
   --terminal-bg-text: rgba(255, 255, 255, 0.5);
   --screen-cover: rgba(38, 36, 46, 0.5);
   --button-hover: #16151e;
+  --project-btn-hover: rgba(146, 174, 249, 0.4);
   --faded-header: rgba(255, 255, 255, 0.2);
   --pfp-layer: rgba(86, 129, 246, 0.2);
   --primary-gradient: #8983f7;
