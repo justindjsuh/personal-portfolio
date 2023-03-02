@@ -187,4 +187,17 @@
 }
 
 @media (max-width: 768px) {
+  .experience-header {
+    font-size: 65px;
+  }
+  .experience-terminal-container {
+    transform: translateY(-25px);
+    width: 95%;
+  }
+  .terminal-experience-text {
+    flex-wrap: wrap;
+  }
+  .experience-terminal-btns {
+    flex-wrap: wrap;
+  }
 }
