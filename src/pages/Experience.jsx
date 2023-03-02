@@ -56,19 +56,19 @@ const Experience = () => {
                 onClick={handleFSAClick}
                 className="experience-terminal-btn terminal-btn1"
               >
-                cd FSA.txt/ &#8594;
+                cat FSA.txt/ &#8594;
               </button>
               <button
                 onClick={handleBloombergClick}
                 className="experience-terminal-btn terminal-btn2"
               >
-                cd Bloomberg.txt/ <span>&#8594;</span>
+                cat Bloomberg.txt/ <span>&#8594;</span>
               </button>
               <button
                 onClick={handleSIGClick}
                 className="experience-terminal-btn terminal-btn3"
               >
-                cd SIG.txt/ &#8594;
+                cat SIG.txt/ &#8594;
               </button>
             </div>
           </div>
