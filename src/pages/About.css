@@ -107,7 +107,6 @@
 }
 
 .toolkit-bg-header {
-  /* transform: translateX(-50px); */
   font-size: 140px;
   margin: 0;
   font-weight: 600;
@@ -260,6 +259,7 @@
 @media (max-width: 1440px) {
   .toolkit-bg-header {
     font-size: 100px;
+    margin-top: 5px;
   }
   .tool-section-header {
     margin: 1rem 0;
