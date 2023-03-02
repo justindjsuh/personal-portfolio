@@ -1,14 +1,8 @@
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 import "../pages/About.css";
 
 const Toolkit = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
-    <div data-aos="fade-down" className="toolkit-container">
+    <div className="toolkit-container">
       <p id="toolkit" className="toolkit-bg-header">
         Toolkit
       </p>

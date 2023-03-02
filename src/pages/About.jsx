@@ -75,6 +75,8 @@ const About = () => {
                 in Computing & Security Technology and a Fullstack Academy grad.
                 My passions generally consist of games, photography, and music.
                 I don&apos;t own a cat yet, but I hope to adopt one some day.
+                <br></br>
+                <br></br>
               </p>
               <p>
                 I aspire to build beautiful products, both <span>visually</span>{" "}

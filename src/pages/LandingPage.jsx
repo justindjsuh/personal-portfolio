@@ -92,12 +92,12 @@ const LandingPage = () => {
           <div className="header-btn header-btn3"></div>
         </div>
         <div className="header-text">
-          <p>justins-porfolio &#8212; -bash</p>
+          <p>justins-portfolio &#8212; -bash</p>
         </div>
       </div>
       <div className="terminal-body">
         <div className="terminal-bg-text">
-          <p>justins-MB:~ justins-porfolio$ ls</p>
+          <p>justins-MB:~ justins-portfolio$ ls</p>
           <p>About Experience Projects Contact</p>
         </div>
         <div className="terminal-main-text">
