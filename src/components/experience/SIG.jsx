@@ -2,7 +2,7 @@ const SIG = () => {
   return (
     <>
       <div className="experience sig">
-        <p className="experience-role">Client Triage IT Support Co-op</p>
+        <p className="experience-role">IT Support Co-op</p>
         <p className="experience-company">Susquehanna Int'l Group</p>
         <div className="experience-description">
           <ul>

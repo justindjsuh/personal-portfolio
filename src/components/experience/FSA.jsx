@@ -11,14 +11,11 @@ const FSA = () => {
           </p>
           <ul>
             <li>
-              Front end development: JavaScript, CSS, HTML, React, Redux
-              (toolkit)
-            </li>
-            <li>
-              Back end development: Node.js, Express, Axios, Services and APIs
+              <strong>Front end development:</strong> JavaScript, CSS, HTML,
+              React, Redux (toolkit) <strong>Back end development:</strong>{" "}
+              Node.js, Express, Axios, Services and APIs
             </li>
             <li>Data Systems: PostgreSQL, Sequelize, pg</li>
-            <li>Security and Authentication: JSON Web Tokens, Bcrypt</li>
             <li>
               Object Oriented Programming, full-stack applications, Single-Page
               Applications
