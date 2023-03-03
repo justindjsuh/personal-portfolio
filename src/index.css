@@ -18,6 +18,7 @@
   --secondary-gradient: #f18425;
   --project-bg: #fff;
   --faded-font: rgba(0, 0, 0, 0.7);
+  --project-headline: rgb(231, 231, 231);
 
   overflow-x: hidden;
   font-synthesis: none;
@@ -44,11 +45,13 @@
   --secondary-gradient: #a3dafb;
   --project-bg: #1d1b23;
   --faded-font: rgba(255, 255, 255, 0.7);
+  --project-headline: #373443;
 }
 
 html,
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 html.menu-open {
