@@ -16,6 +16,8 @@
   --pfp-layer: rgb(241, 80, 37, 0.15);
   --primary-gradient: #f15025;
   --secondary-gradient: #f18425;
+  --project-bg: #fff;
+  --faded-font: rgba(0, 0, 0, 0.7);
 
   overflow-x: hidden;
   font-synthesis: none;
@@ -40,6 +42,8 @@
   --pfp-layer: rgba(86, 129, 246, 0.2);
   --primary-gradient: #8983f7;
   --secondary-gradient: #a3dafb;
+  --project-bg: #1d1b23;
+  --faded-font: rgba(255, 255, 255, 0.7);
 }
 
 html,
