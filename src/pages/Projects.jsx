@@ -12,11 +12,14 @@ const Projects = () => {
     <div className="projects-page-container">
       <div className="projects-landing">
         <div className="project-headline">
-          <p>
-            WHERE<br></br>IDEAS<br></br>
-            <span>BEGIN.</span>
-          </p>
-          <a href="#project">See my work</a>
+          <div className="project-page-header">
+            <p>
+              WHERE<br></br>IDEAS<br></br>
+              <span>BEGIN.</span>
+            </p>
+            <a href="#project">See my work</a>
+          </div>
+          <img src="/testimg.jpg" />
         </div>
         <a
           href="#project"
