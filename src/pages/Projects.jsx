@@ -19,7 +19,9 @@ const Projects = () => {
             </p>
             <a href="#project">See my work</a>
           </div>
-          <img src="/testimg.jpg" />
+          <div className="project-header-img">
+            <img src="/testimg.jpg" />
+          </div>
         </div>
         <a
           href="#project"
