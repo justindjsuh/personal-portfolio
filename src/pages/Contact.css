@@ -8,6 +8,10 @@
 
 .contact-container h1 {
   margin: 0;
+  font-size: 88px;
+  color: var(--faded-header);
+  align-self: flex-start;
+  transform: translateY(30px);
 }
 
 .contact-form {
@@ -131,4 +135,49 @@
   color: var(--bg-primary);
   border-radius: 0.3rem;
   cursor: pointer;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.contact-links svg {
+  fill: var(--text-accent);
+}
+
+.right-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.vertical-line {
+  height: 4rem;
+  width: 1px;
+  border: 1px solid var(--text-accent);
+}
+
+@media (max-height: 1024px) {
+  .contact-container {
+    font-size: 25px;
+  }
+  .contact-form-input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1440px) and (min-height: 700px) {
+  .contact-container h1 {
+    transform: translateY(0px);
+  }
+
+  .contact-form {
+    transform: translateY(-30px);
+  }
 }
