@@ -41,7 +41,7 @@ const Projects = () => {
             </a>
           </div>
           <div className="project-info">
-            <h2 class="project-title">Peak Performance</h2>
+            <h2 className="project-title">Peak Performance</h2>
             <p>
               A website that serves as a medium for anyone who aspires to reach
               their fitness goals. The interface serves as a seamless
@@ -91,7 +91,7 @@ const Projects = () => {
             </a>
           </div>
           <div className="project-info">
-            <h2 class="project-title">Alibi Esports</h2>
+            <h2 className="project-title">Alibi Esports</h2>
             <p>
               A website for the organization Alibi Esports, used to host
               organization information, tournament registration, and
