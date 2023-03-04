@@ -3,8 +3,10 @@ import { send } from "emailjs-com";
 import "./Contact.css";
 
 const Contact = () => {
-  // state can range between question, work, connecting, other
+  // Questions, Work Opportunities, Connecting, Other
   const [subject, setSubject] = useState("Questions");
+  // LOADING, ERROR, SUCCESS
+  const [status, setStatus] = useState("");
   const [firstName, setFirstName] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
@@ -16,24 +18,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    send(
-      import.meta.env.VITE_SERVICE_ID,
-      import.meta.env.VITE_TEMPLATE_ID,
-      {
-        from_name: `${firstName} ${surname}`,
-        to_name: "Justin",
-        subject,
-        message,
-        reply_to: email,
-      },
-      import.meta.env.VITE_PUBLIC_KEY
-    )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-      })
-      .catch((err) => {
-        console.log("FAILED", err);
-      });
+    const submitBtn = document.querySelector(".contact-submit-btn");
+    submitBtn.innerHTML = "Sending...";
+    submitBtn.disabled = true;
+    setTimeout(() => {
+      send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        {
+          from_name: `${firstName} ${surname}`,
+          to_name: "Justin",
+          subject,
+          message,
+          reply_to: email,
+        },
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+        .then((response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        })
+        .catch((err) => {
+          console.log("FAILED", err);
+        });
+      submitBtn.innerHTML = "Sent!";
+    }, 2000);
   };
 
   useEffect(() => {
@@ -49,7 +57,11 @@ const Contact = () => {
         I would love to hear from you!<br></br>Get in touch 👋
       </h1>
       <div className="contact-form">
-        <form onSubmit={handleSubmit} autoComplete="off">
+        <form
+          className="contact-form-container"
+          onSubmit={handleSubmit}
+          autoComplete="off"
+        >
           <div className="contact-info">
             <div className="contact-name">
               <div className="contact-form-input">
@@ -133,7 +145,9 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">Send Message</button>
+          <button className="contact-submit-btn" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </div>

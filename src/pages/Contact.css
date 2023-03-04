@@ -6,6 +6,10 @@
   /* min-height: 95svh; */
 }
 
+.contact-container h1 {
+  margin: 0;
+}
+
 .contact-form {
   padding: 2rem;
   border-radius: 0.8rem;
@@ -103,4 +107,28 @@
   outline: none !important;
   border: 1px solid var(--text-accent);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-submit-btn {
+  background-color: var(--text-accent);
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--bg-primary);
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
