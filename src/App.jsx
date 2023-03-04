@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Intro />} />
+        <Route exact path="/" element={<Intro />} />
         <Route path="/home" element={<Layout />}>
           <Route index element={<LandingPage />} />
         </Route>
@@ -27,9 +27,6 @@ function App() {
         </Route>
         <Route path="/contact" element={<Layout />}>
           <Route index element={<Contact />} />
-        </Route>
-        <Route path="/*" element={<Layout />}>
-          <Route index element={<LandingPage />} />
         </Route>
       </Routes>
     </div>
