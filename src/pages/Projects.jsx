@@ -46,11 +46,13 @@ const Projects = () => {
               A website that serves as a medium for anyone who aspires to reach
               their fitness goals. The interface serves as a seamless
               integration of several bookkeeping services, achievements, and
-              even a social media feature. Designed and implemented with a team
-              of 5 developers, utilizing Next.js, Figma, Supabase (a Firebase
-              alternative), and MaterialUI to create a sleek and seamless
-              experience to help users maintain healthy habits and hit their
-              fitness goals.
+              even a social media feature.
+            </p>
+            <p>
+              Designed and implemented with a team of 5 developers, utilizing
+              Next.js, Figma, Supabase (a Firebase alternative), and MaterialUI
+              to create a sleek and seamless experience to help users maintain
+              healthy habits and hit their fitness goals.
             </p>
             <div className="project-tools">
               <p>Next.js</p>
@@ -95,11 +97,13 @@ const Projects = () => {
             <p>
               A website for the organization Alibi Esports, used to host
               organization information, tournament registration, and
-              communication to players. This was developed by incorporating
-              UX/UI, form handling, RESTful API, and database development to
-              create an interactive and dynamic environment that handled
-              communication and tournament registration while streamlining the
-              user experience.
+              communication to players.
+            </p>
+            <p>
+              This was developed by incorporating UX/UI, form handling, RESTful
+              API, and database development to create an interactive and dynamic
+              environment that handled communication and tournament registration
+              while streamlining the user experience.
             </p>
             <div className="project-tools">
               <p>JavaScript</p>
