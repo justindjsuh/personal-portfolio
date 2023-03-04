@@ -155,6 +155,10 @@
   margin: 0;
 }
 
+.project-info p {
+  margin-bottom: 10px;
+}
+
 .project-tools {
   display: flex;
   flex-wrap: wrap;
