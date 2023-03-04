@@ -28,6 +28,9 @@ function App() {
         <Route path="/contact" element={<Layout />}>
           <Route index element={<Contact />} />
         </Route>
+        <Route path="/*" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+        </Route>
       </Routes>
     </div>
   );

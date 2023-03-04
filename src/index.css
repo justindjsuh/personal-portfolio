@@ -48,6 +48,8 @@
   --project-bg: #1d1b23;
   --faded-font: rgba(255, 255, 255, 0.7);
   --project-headline: #373443;
+  --input-bg: #3f3c4d;
+  --input-border: #282430;
 }
 
 html,
