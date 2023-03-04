@@ -1,0 +1,106 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* min-height: 95svh; */
+}
+
+.contact-form {
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-input input {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  padding: 0.7rem 1rem 0.7rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.contact-form-input input:focus {
+  outline: none !important;
+  border: 1px solid var(--text-accent);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-input label {
+  all: unset;
+}
+
+.contact-form-input input::-webkit-input-placeholder {
+  font-family: "DM sans", sans-serif;
+}
+
+.contact-form-input input:-ms-input-placeholder {
+  font-family: "DM sans", sans-serif;
+}
+
+.contact-form-input input:-moz-placeholder {
+  font-family: "DM sans", sans-serif;
+}
+
+.contact-form-input input::-moz-placeholder {
+  font-family: "DM sans", sans-serif;
+}
+
+.contact-form-subject p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.subject-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.subject-btns button {
+  outline: none;
+  border: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  background-color: var(--input-bg);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.subject-btns .active-btn {
+  border: 1px solid var(--text-accent);
+  color: var(--text-accent);
+  background-color: var(--bg-primary);
+}
+
+.contact-msg {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-msg label {
+  all: unset;
+}
+
+.contact-msg textarea {
+  background-color: var(--input-bg);
+  border: 1px solid var(--input-border);
+  padding: 0.7rem 1rem 0.7rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.contact-msg textarea:focus {
+  outline: none !important;
+  border: 1px solid var(--text-accent);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
