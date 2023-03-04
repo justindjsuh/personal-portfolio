@@ -19,6 +19,8 @@
   --project-bg: #fff;
   --faded-font: rgba(0, 0, 0, 0.7);
   --project-headline: rgb(231, 231, 231);
+  --input-bg: #e8e9ee;
+  --input-border: #c6c7cc;
 
   overflow-x: hidden;
   font-synthesis: none;
