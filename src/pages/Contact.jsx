@@ -76,11 +76,11 @@ const Contact = () => {
                 />
               </div>
               <div className="contact-form-input">
-                <label htmlFor="surname">Surname</label>
+                <label htmlFor="lname">Last Name</label>
                 <input
-                  id="surname"
+                  id="lname"
                   type="text"
-                  placeholder="Enter your surname"
+                  placeholder="Enter your last name"
                   name="surname"
                   onChange={(e) => setSurname(e.target.value)}
                   required
