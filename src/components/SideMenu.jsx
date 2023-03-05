@@ -72,7 +72,6 @@ const SideMenu = ({
 
     const navLinks = document.querySelectorAll(".nav-option");
     if (navLinks.length && isMounted) {
-      console.log("HELLO");
       gsap.from(navLinks, {
         duration: 1,
         x: 300,
