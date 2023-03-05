@@ -5,17 +5,19 @@ const FSA = () => {
         {/* <p className="experience-role"></p> */}
         <p className="experience-company-fsa">Fullstack Academy</p>
         <div className="experience-description">
-          <p>
-            Immersive 13-week program for Full-stack web development utilizing
-            the PERN stack.
-          </p>
           <ul>
             <li>
-              <strong>Front end development:</strong> JavaScript, CSS, HTML,
-              React, Redux (toolkit) <strong>Back end development:</strong>{" "}
-              Node.js, Express, Axios, Services and APIs
+              Immersive 13-week program for Full-stack web development utilizing
+              the PERN stack.
             </li>
-            <li>Data Systems: PostgreSQL, Sequelize, pg</li>
+            <li>
+              Front end development: JavaScript, CSS, HTML, React, Redux
+              (toolkit)
+              <br></br>
+              Back end development: Node.js, Express, Axios, Services and APIs
+              <br></br>
+              Data Systems: PostgreSQL, Sequelize, pg
+            </li>
             <li>
               Object Oriented Programming, full-stack applications, Single-Page
               Applications
