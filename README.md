@@ -26,7 +26,7 @@
 ## Demo
 
 <p align="center">
-    <img src="./screenshots/landing-page.gif" width="738" />
+    <img src="./portfolio-sc/portfolio-gif.gif" width="738" />
 </p>
 
 
@@ -35,20 +35,40 @@
 <h3 align="center">Landing Page<h3>
 
 <p align="center">
-    <img src="./screenshots/landing.PNG" alt="portfolio landing page" width="738">
-</p>
-
-<h3 align="center">Projects<h3>
-
-<p align="center">
-    <img src="./screenshots/projects.PNG" alt="portfolio form page" width="738">
+    <img src="./portfolio-sc/landing.PNG" alt="portfolio landing page" width="738">
 </p>
 
 <h3 align="center">About<h3>
 
 <p align="center">
-    <img src="./screenshots/about.PNG" alt="portfolio form page" width="738">
+    <img src="./portfolio-sc/about.PNG" alt="portfolio about page" width="738">
 </p>
+
+<h3 align="center">Experience<h3>
+
+<p align="center">
+    <img src="./portfolio-sc/experience.PNG" alt="portfolio experience page" width="738">
+</p>
+
+<h3 align="center">Projects<h3>
+
+<p align="center">
+    <img src="./portfolio-sc/projects.PNG" alt="portfolio project page" width="738">
+</p>
+
+<h3 align="center">Contact<h3>
+
+<p align="center">
+    <img src="./portfolio-sc/contact.PNG" alt="portfolio contact page" width="738">
+</p>
+
+<h3 align="center">Dark Mode Theme<h3>
+
+<p align="center">
+    <img src="./portfolio-sc/dark-mode.PNG" alt="portfolio dark mode contact page" width="738">
+</p>
+
+
 
 ## Tech Stack
 
@@ -67,6 +87,9 @@
 ## Lessons Learned
 <p>
 I had made my first portfolio back in January, so it felt like it was an odd decision to decide to make a new one so soon (within two months). But with the amount of knowledge I gained in those short two months, I felt like I could do so much better than what I currently had. That inspired my decision to create a new portfolio from scratch that utilized my new web development and design knowledge. 
+</p>
+<p>
+One of the features I really wanted to implement this time around, was a dark mode feature. It was very cool to work with :root variables and having them change based on the theme designated. I had a lot of fun with working with two different themes and I hope to implement something with dark/light theme again in the future! It was tricky getting it to work the first couple days I was working with it. One thing to note, is that while the dark/light toggler works, it doesn't save the theme of the user. If you refresh the page, it will default to light mode. I do know that this is fixable using local storage and storing the currently set theme as a variable in the storage object. However, I wasn't able to implement that just yet. It is in the list of features I am planning to implement though.
 </p>
 <p>
 I had tried to work with Anime.js and a package called Splt.js, but for some reason I could not get them to work properly. I stuck with GSAP for animations and kept the tech pretty vanilla in terms of new packages. I really struggled with making the page-to-page transitions seamless. I think that in the future, I would opt to find a cleaner solution than the one I implemented. It is a bit finnicky so it is definitely not the preferred method. 
