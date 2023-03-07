@@ -31,10 +31,7 @@ function Intro() {
               <div className="crescent"></div>
             </div>
             <p className="heading">Choose a theme</p>
-            <p>
-              Before I show you around, do you prefer light or dark mode?
-              &#40;there&apos;s a right answer&#41;
-            </p>
+            <p>Before I show you around, do you prefer light or dark mode?</p>
             <label htmlFor="switch">
               <div className="toggle"></div>
               <div className="names">
