@@ -86,6 +86,9 @@
 
 ## Lessons Learned
 <p>
+Before I begin, I must give credit to Demilade Olaleye for inspiring me to create an intro page. He had an amazing light/dark toggle animation I just needed to apply to my portfolio.
+</p>
+<p>
 I had made my first portfolio back in January, so it felt like it was an odd decision to decide to make a new one so soon (within two months). But with the amount of knowledge I gained in those short two months, I felt like I could do so much better than what I currently had. That inspired my decision to create a new portfolio from scratch that utilized my new web development and design knowledge. 
 </p>
 <p>
