@@ -8,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 95svh;
+  min-height: 90svh;
   background-color: var(--bg-primary);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .project-page-header > p {
-  font-size: 140px;
+  font-size: 120px;
   margin: 0;
   line-height: 1.1;
   /* color: var(--text-primary); */
@@ -38,8 +38,8 @@
 }
 
 .project-headline img {
-  min-width: 30rem;
-  max-width: 30rem;
+  min-width: 25rem;
+  max-width: 25rem;
   height: auto;
   object-fit: contain;
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
@@ -94,7 +94,7 @@
 .project {
   display: flex;
   align-items: center;
-  max-width: 80rem;
+  max-width: 70rem;
   background-color: var(--project-bg);
   padding: 2.5rem;
   box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
@@ -157,6 +157,10 @@
 
 .project-info p {
   margin-bottom: 10px;
+}
+
+.project-info .project-tools p {
+  margin: 0;
 }
 
 .project-tools {

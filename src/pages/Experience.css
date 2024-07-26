@@ -33,7 +33,7 @@
   background-color: var(--terminal-offwhite);
   border: 1px solid var(--terminal-border);
   border-radius: 12px;
-  font-size: 22px;
+  font-size: 16px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   transition: all 0.1s;
@@ -44,7 +44,7 @@
 }
 
 .experience-header {
-  font-size: 140px;
+  font-size: 100px;
   margin: 0;
   font-weight: 600;
   color: var(--faded-header);
@@ -53,7 +53,7 @@
 .experience {
   display: flex;
   flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   opacity: 0;
   animation: fade 0.5s ease-in;
   animation-fill-mode: forwards;
@@ -69,7 +69,7 @@
 }
 
 .experience-description p {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -77,7 +77,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .experience-description ul li {
@@ -110,27 +110,30 @@
 }
 
 .terminal-content {
-  width: 80%;
+  width: 90%;
 }
 
 .terminal-experience-text {
   display: flex;
   gap: 2rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .experience-role {
-  font-size: 44px;
+  padding: 1rem 0rem;
+  font-size: 26px;
   line-height: 1;
 }
 
 .experience-company-fsa {
-  font-size: 44px;
+  padding: 1rem 0rem;
+  font-size: 26px;
   line-height: 1;
 }
 
 .experience-company {
-  font-size: 30px;
+  font-size: 22px;
 }
 
 .experience-toolkit {
@@ -158,7 +161,7 @@
 
 @media (max-width: 1440px) {
   .experience-header {
-    font-size: 80px;
+    font-size: 60px;
   }
   .experience-company {
     font-size: 24px;
@@ -172,7 +175,7 @@
     width: 100px;
   }
   .experience-terminal-btn {
-    font-size: 16px;
+    font-size: 12px;
     padding: 0.2rem 1rem;
   }
   .experience-terminal-header {
@@ -182,17 +185,17 @@
     font-size: 16px;
   }
   .experience-description ul {
-    font-size: 16px;
+    font-size: 12px;
   }
   .experience-description p {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
   }
 }
 
 @media (max-width: 768px) {
   .experience-header {
-    font-size: 65px;
+    font-size: 55px;
   }
   .experience-terminal-container {
     transform: translateY(-25px);

@@ -3,26 +3,38 @@ import Bloomberg from "../components/experience/Bloomberg";
 import FSA from "../components/experience/FSA";
 import SIG from "../components/experience/SIG";
 import "./Experience.css";
+import Comcast from "../components/experience/Comcast";
 
 const Experience = () => {
-  const [fsa, setFSA] = useState(true);
+  const [comcast, setComcast] = useState(true);
+  const [fsa, setFSA] = useState(false);
   const [bloomberg, setBloomberg] = useState(false);
   const [sig, setSIG] = useState(false);
 
   const handleFSAClick = () => {
     setFSA(true);
+    setComcast(false);
     setBloomberg(false);
     setSIG(false);
   };
 
   const handleBloombergClick = () => {
     setBloomberg(true);
+    setComcast(false);
     setFSA(false);
     setSIG(false);
   };
 
   const handleSIGClick = () => {
     setSIG(true);
+    setComcast(false);
+    setFSA(false);
+    setBloomberg(false);
+  };
+  
+  const handleComcastClick = () => {
+    setComcast(true);
+    setSIG(false);
     setFSA(false);
     setBloomberg(false);
   };
@@ -53,6 +65,12 @@ const Experience = () => {
             <p>justins-MB:Experience justins-portfolio$ ls</p>
             <div className="experience-terminal-btns">
               <button
+                  onClick={handleComcastClick}
+                  className="experience-terminal-btn terminal-btn1"
+                >
+                  cat Comcast.txt/ &#8594;
+              </button>
+              <button
                 onClick={handleFSAClick}
                 className="experience-terminal-btn terminal-btn1"
               >
@@ -74,6 +92,7 @@ const Experience = () => {
           </div>
           <div className="terminal-content">
             <div className="terminal-experience-text">
+              {comcast && <Comcast />}
               {fsa && <FSA />}
               {bloomberg && <Bloomberg />}
               {sig && <SIG />}

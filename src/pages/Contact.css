@@ -161,6 +161,7 @@
 .vertical-line {
   height: 4rem;
   width: 1px;
+  background-color: var(--text-accent);
   border: 1px solid var(--text-accent);
 }
 

@@ -11,6 +11,10 @@ const Toolkit = () => {
           <p className="tool-section-header frontend-header">Frontend</p>
           <div className="tool-logos">
             <div className="single-tool-container">
+              <img src="/toolkit-logos/typescript.png" alt="ts-logo logo" />
+              <p>TypeScript</p>
+            </div>
+            <div className="single-tool-container">
               <img src="/toolkit-logos/javascript.png" alt="javascript logo" />
               <p>JavaScript</p>
             </div>
@@ -81,10 +85,6 @@ const Toolkit = () => {
         <div className="tool-section learning">
           <p className="tool-section-header learning-header">Learning</p>
           <div className="tool-logos">
-            <div className="single-tool-container">
-              <img src="/toolkit-logos/typescript.png" alt="ts-logo logo" />
-              <p>TypeScript</p>
-            </div>
             <div className="single-tool-container">
               <img src="/toolkit-logos/java.png" alt="java logo" />
               <p>Java</p>

@@ -7,18 +7,17 @@ const Bloomberg = () => {
         <div className="experience-description">
           <ul>
             <li>
-              Revamped a manual process involving JIRA to be completely
-              automated, attaining a 95% reduction in employee time spent and
-              deprecating the previously inefficient workflow
+              Automated a previously manual JIRA process, achieving a 95% reduction in employee time 
+              spent and streamlining workflow efficiency by deprecating outdated procedures
             </li>
             <li>
-              Authored documentation for a newly organized team that contained
-              the fundamentals of web acquisition and data analysis
+              Created comprehensive documentation for a newly formed team, covering the 
+              fundamentals of web acquisition and data analysis to support onboarding and operational efficiency
             </li>
             <li>
-              Developed, maintained, and performed quality assurance on web
-              crawlers to obtain and analyze data for distribution that is
-              displayed on the Bloomberg Terminal.
+              Developed, maintained, and performed quality assurance on web crawlers for data acquisition and analysis, 
+              contributing to the real-time data feed displayed on the Bloomberg Terminal, 
+              a critical platform for financial professionals
             </li>
           </ul>
         </div>
