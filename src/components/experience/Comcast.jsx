@@ -26,7 +26,7 @@ const Comcast = () => {
             <img src="/toolkit-logos/node.png" alt="node logo" />
             <img src="/toolkit-logos/express.png" alt="express logo" />
             <img src="/toolkit-logos/react.png" alt="react logo" />
-            <img src="/toolkit-logos/jira.png" alt="jira logo" />
+            <img src="/toolkit-logos/typescript.png" alt="typescript logo" />
           </div>
         </div>
       </>
